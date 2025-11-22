@@ -1,7 +1,5 @@
 # TrafficLight-Classification-Model
-
-## Demo en video
-(https://github.com/kriswarrior/TrafficLight-Classification-Model/blob/main/data_example/2025-11-22-videopreview1.mp4)
+[![Demo de video](https://github.com/kriswarrior/TrafficLight-Classification-Model/blob/main/data_example/videopreview1-thumbnail.png)](https://github.com/kriswarrior/TrafficLight-Classification-Model/blob/main/data_example/2025-11-22-videopreview1.mp4)
 
 Sistema de detección de semáforos basado en el dataset **Traffic Lights of New York (TLoNY)** y modelos YOLOv8. El repositorio contiene dos flujos diferenciados:
 
