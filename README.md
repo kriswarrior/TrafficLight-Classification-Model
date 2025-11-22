@@ -146,11 +146,3 @@ python tlony_sistema_rt.py \
 2. **Pantalla del sistema en vivo** – captura o GIF del HUD con detecciones resaltadas y resumen de estados.
 3. **Auto-dataset en acción** – GIF corto que muestre la consola anunciando capturas + ejemplo de imagen guardada.
 4. **Comparativa antes/después de entrenamiento** – cuadro con dos imágenes: detección con pesos base vs pesos entrenados.
-
-> Cuando tengas el material, simplemente inserta cada imagen/GIF en esta sección usando Markdown (`![Título](ruta)`), aprovechando los subtítulos propuestos para contextualizar al lector.
-
-## Próximos pasos sugeridos
-
-- Añadir `requirements.txt` o un `pyproject.toml` para fijar versiones.
-- Crear scripts de evaluación (mAP/precision) para comparar runs rápidamente.
-- Documentar benchmarks de FPS vs configuración (`--imgsz`, ROI, GPU/CPU) dentro de esta misma guía.
