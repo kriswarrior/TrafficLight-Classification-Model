@@ -64,24 +64,24 @@ TrafficLight-Classification-Model/
 
 2. **Entrenar y probar con una imagen** (se omite la GUI si usas `--headless`):
    ```bash
-   python tlony_yolo_opencv.py \
-     --train \
-     --image data/sample.jpg \
-     --weights runs/tlony/yolov8n-tlony/weights/best.pt \
-     --model_size n \
-     --epochs 60 \
-     --imgsz 640 \
-     --batch 16
+   python tlony_yolo_opencv.py
+   --train
+   --image YourSample.jpg
+   --weights runs/tlony/yolov8n-tlony/weights/best.pt
+   --model_size n
+   --epochs 60
+   --imgsz 640
+   --batch 16
    ```
 
 3. **Usar pesos ya entrenados**:
    ```bash
-   python tlony_yolo_opencv.py \
-     --image data/sample.jpg \
-     --weights path/a/tus_pesos.pt \
-     --conf 0.35 \
-     --headless \
-     --save_path outputs/sample_pred.jpg
+   python tlony_yolo_opencv.py
+   --image data/sample.jpg
+   --weights path/a/tus_pesos.pt
+   --conf 0.35 
+   --headless
+   --save_path outputs/sample_pred.jpg
    ```
 
 4. **Parámetros útiles**:
@@ -103,25 +103,25 @@ Características clave:
 Ejemplo básico (webcam 0, sin auto-dataset):
 
 ```bash
-python tlony_sistema_rt.py \
-  --weights runs/tlony/yolov8n-tlony/weights/best.pt \
-  --source 0
+python tlony_sistema_rt.py
+--weights runs/tlony/yolov8n-tlony/weights/best.pt
+--source 0
 ```
 
 Ejemplo activando auto-dataset y ajustes de ROI:
 
 ```bash
-python tlony_sistema_rt.py \
-  --weights runs/tlony/yolov8n-tlony/weights/best.pt \
-  --source video.mp4 \
-  --roi_xmin 0.15 --roi_xmax 0.85 \
-  --roi_ymin 0.15 --roi_ymax 0.55 \
-  --auto_dataset \
-  --auto_min_red_seconds 4 \
-  --auto_min_green_seconds 2 \
-  --auto_min_yellow_seconds 0.6 \
-  --auto_outdir auto_dataset \
-  --auto_cooldown 3
+python tlony_sistema_rt.py
+--weights runs/tlony/yolov8n-tlony/weights/best.pt
+--source video.mp4
+--roi_xmin 0.15 --roi_xmax 0.85
+--roi_ymin 0.15 --roi_ymax 0.55
+--auto_dataset
+--auto_min_red_seconds 4
+--auto_min_green_seconds 2
+--auto_min_yellow_seconds 0.6
+--auto_outdir auto_dataset
+--auto_cooldown 3
 ```
 
 ### Lógica interna del MAIN
