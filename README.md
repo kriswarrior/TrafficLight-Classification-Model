@@ -1,5 +1,11 @@
 # TrafficLight-Classification-Model
 
+## Demo en video
+
+<video src="data_example/2025-11-22-videopreview1.mp4" controls muted playsinline>
+Tu navegador no soporta video. Descarga el clip <a href="data_example/2025-11-22-videopreview1.mp4">aquí</a>.
+</video>
+
 Sistema de detección de semáforos basado en el dataset **Traffic Lights of New York (TLoNY)** y modelos YOLOv8. El repositorio contiene dos flujos diferenciados:
 
 - `tlony_yolo_opencv.py`: prepara/valida el dataset, entrena YOLOv8 con una configuración corregida y prueba rápidamente el modelo con una imagen estática.
