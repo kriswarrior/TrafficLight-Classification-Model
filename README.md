@@ -15,7 +15,7 @@ Sistema de detección de semáforos basado en el dataset **Traffic Lights of New
 ```bash
 pip install ultralytics opencv-python huggingface_hub
 ```
-or
+o
 ```bash
 pip3 install -r requirements.txt
 ```
